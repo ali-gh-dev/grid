@@ -126,3 +126,29 @@ p {
     }
 }
 
+
+/*
+================================================
+navbar
+================================================
+*/
+
+/*.navbar-contents{*/
+/*    padding: 2rem 1rem;*/
+/*    background: var(--clr-primary-3);*/
+/*}*/
+/*.nav-links {*/
+/*    display: none;*/
+/*}*/
+
+/*.nav-header {*/
+/*    display: grid;*/
+/*    grid-template-columns: 4fr 1fr;*/
+/*}*/
+
+/*.nav-toggle{*/
+/*    font-size: 1.5rem;*/
+/*    background: transparent;*/
+/*    border: transparent;*/
+/*    cursor: pointer;*/
+/*}*/
