@@ -1,5 +1,128 @@
-* {
+/*
+================================================
+fonts
+================================================
+*/
+
+
+@font-face {
+    font-family: "vazir-farsi-digits";
+    src: url("../fonts/vazir-farsi-digits/Vazir-Medium-FD-WOL.woff") format("woff"),
+    url("../fonts/vazir-farsi-digits/Vazir-Medium-FD-WOL.woff2") format("woff2"),
+    url("../fonts/vazir-farsi-digits/Vazir-Medium-FD-WOL.ttf") format("truetype");
+}
+
+
+/*
+================================================
+global variables
+================================================
+*/
+
+
+:root {
+    --clr-primary-1: #7400b8;
+    --clr-primary-2: #6930c3;
+    --clr-primary-3: #5e60ce;
+    --clr-primary-4: #5390d9;
+    --clr-primary-5: #4ea8de;
+    --clr-grey-1: #102a42;
+    --clr-grey-2: #617d98;
+    --clr-grey-3: rgb(241, 245, 248);
+    --clr-white: #fff;
+    --ff-primary: "vazir-farsi-digits", sans-serif;
+    --transition: all 0.3s linear;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+}
+
+
+/*
+================================================
+global styles
+================================================
+*/
+
+*, ::after, ::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-white);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-2);
+}
+
+@media screen and (min-width: 800px) {
+    h1, h2, h3, h4 {
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
+
