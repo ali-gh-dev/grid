@@ -21,7 +21,7 @@ global variables
 
 
 :root {
-    --clr-primary-1: #7400b8;
+    --clr-primary-1: #47036d;
     --clr-primary-2: #6930c3;
     --clr-primary-3: #5e60ce;
     --clr-primary-4: #5390d9;
@@ -133,22 +133,41 @@ navbar
 ================================================
 */
 
-/*.navbar-contents{*/
-/*    padding: 2rem 1rem;*/
-/*    background: var(--clr-primary-3);*/
-/*}*/
-/*.nav-links {*/
-/*    display: none;*/
-/*}*/
+.nav-links {
+    display: none;
+}
 
-/*.nav-header {*/
-/*    display: grid;*/
-/*    grid-template-columns: 4fr 1fr;*/
-/*}*/
+.navbar {
+    background: var(--clr-primary-5);
+    padding: 2rem 1rem;
+}
 
-/*.nav-toggle{*/
-/*    font-size: 1.5rem;*/
-/*    background: transparent;*/
-/*    border: transparent;*/
-/*    cursor: pointer;*/
-/*}*/
+.navbar-contents {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+
+}
+
+
+.nav-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.nav-header h3 {
+    margin-bottom: 0;
+    font-size: 1.75rem;
+    color: var(--clr-primary-1);
+
+}
+
+.nav-toggle {
+    justify-self: end;
+    font-size: 2rem;
+    color: var(--clr-primary-1);
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
