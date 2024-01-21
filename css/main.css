@@ -129,7 +129,7 @@ p {
 
 /*
 ================================================
-navbar
+app
 ================================================
 */
 
@@ -220,19 +220,27 @@ sidebar
 ================================================
 */
 
-/*.sidebar {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    background: var(--clr-white);*/
-/*    width: 100vw;*/
-/*    height: 100vh;*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--clr-grey-3);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    transform: translateX(100%);
 
-/*    display: grid;*/
-/*    grid-template-columns: 1fr;*/
-/*    grid-template-rows: repeat(3, 1fr);*/
+    display: grid;
+    /*justify-items: center;*/
+    /*align-items: center;*/
+    place-items: center;
 
-/*    !*display: none;*!*/
-/*}*/
+    transition: var(--transition);
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
 
 /*.sidebar button{*/
 /*    background: transparent;*/
