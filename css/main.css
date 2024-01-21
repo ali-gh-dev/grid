@@ -138,15 +138,25 @@ navbar
 }
 
 .navbar {
+    height: 6rem;
     background: var(--clr-primary-5);
     padding: 2rem 1rem;
+    transition: var(--transition);
+}
+
+.navbar-fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: var(--clr-white);
+    box-shadow: var(--dark-shadow);
 }
 
 .navbar-contents {
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
-
 }
 
 
@@ -201,4 +211,16 @@ navbar
     .nav-link:hover{
         color: var(--clr-primary-3);
     }
+}
+
+
+/*
+================================================
+navbar
+================================================
+*/
+
+.hero{
+    height: 130vh;
+    background: var(--clr-primary-2);
 }
