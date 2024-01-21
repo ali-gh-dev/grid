@@ -242,22 +242,54 @@ sidebar
     transform: translateX(0);
 }
 
-/*.sidebar button{*/
-/*    background: transparent;*/
-/*    border: transparent;*/
-/*}*/
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: transparent;
+    border: transparent;
+    font-size: 3rem;
+    color: #e77575;
+    cursor: pointer;
+    transition: var(--transition);
+}
 
-/*.sidebar-links{*/
-/*    display: grid;*/
-/*    grid-template-rows: repeat(4,1fr);*/
-/*    justify-items: center;*/
-/*}*/
+.close-btn:hover {
+    color: red;
+}
 
-/*.sidebar-icons{*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(5, 1fr);*/
-/*    justify-items: center;*/
-/*}*/
+.sidebar-links {
+    text-align: center;
+}
+
+.sidebar-links a {
+    font-size: 1.5rem;
+    color: var(--clr-grey-2);
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-links a:hover {
+    color: var(--clr-primary-4);
+}
+
+.sidebar-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.sidebar-icons a {
+    font-size: 1.5rem;
+    color: var(--clr-grey-1);
+    transition: var(--transition);
+}
+
+.sidebar-icons a:hover{
+    color: var(--clr-primary-4);
+}
 
 /*
 ================================================
