@@ -138,13 +138,13 @@ navbar
 }
 
 .navbar {
-    height: 6rem;
+    /*height: 6rem;*/
     background: var(--clr-primary-5);
     padding: 2rem 1rem;
     transition: var(--transition);
 }
 
-.navbar-fixed{
+.navbar-fixed {
     position: fixed;
     top: 0;
     right: 0;
@@ -208,7 +208,7 @@ navbar
         transition: var(--transition);
     }
 
-    .nav-link:hover{
+    .nav-link:hover {
         color: var(--clr-primary-3);
     }
 }
@@ -216,11 +216,50 @@ navbar
 
 /*
 ================================================
-navbar
+sidebar
 ================================================
 */
 
-.hero{
-    height: 130vh;
-    background: var(--clr-primary-2);
-}
+/*.sidebar {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    background: var(--clr-white);*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+
+/*    display: grid;*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-rows: repeat(3, 1fr);*/
+
+/*    !*display: none;*!*/
+/*}*/
+
+/*.sidebar button{*/
+/*    background: transparent;*/
+/*    border: transparent;*/
+/*}*/
+
+/*.sidebar-links{*/
+/*    display: grid;*/
+/*    grid-template-rows: repeat(4,1fr);*/
+/*    justify-items: center;*/
+/*}*/
+
+/*.sidebar-icons{*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(5, 1fr);*/
+/*    justify-items: center;*/
+/*}*/
+
+/*
+================================================
+hero
+================================================
+*/
+
+/*.hero {*/
+/*    height: 130vh;*/
+/*    background: var(--clr-primary-2);*/
+/*}*/
+
+
