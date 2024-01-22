@@ -273,7 +273,7 @@ sidebar
     color: var(--clr-primary-4);
 }
 
-.sidebar-icons {
+.social-icons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
@@ -281,13 +281,13 @@ sidebar
     margin-top: 3rem;
 }
 
-.sidebar-icons a {
+.social-icons a {
     font-size: 1.5rem;
     color: var(--clr-grey-1);
     transition: var(--transition);
 }
 
-.sidebar-icons a:hover{
+.social-icons a:hover{
     color: var(--clr-primary-4);
 }
 
