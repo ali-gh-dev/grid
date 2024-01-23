@@ -126,6 +126,9 @@ p {
     }
 }
 
+.section {
+    padding: 5rem 0;
+}
 
 .section-center {
     width: 90vw;
@@ -167,6 +170,8 @@ p {
     margin-right: auto;
 }
 
+
+
 /*
 ================================================
 navbar
@@ -178,10 +183,11 @@ navbar
 }
 
 .navbar {
-    height: 5rem;
+    height: 4.5rem;
     background: var(--clr-primary-5);
-    padding: 2rem 1rem;
+    padding: 1rem;
     transition: var(--transition);
+    z-index: 3;
 }
 
 .navbar-fixed {
@@ -196,7 +202,7 @@ navbar
 .navbar-contents {
     width: 100%;
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 
@@ -342,7 +348,7 @@ hero
 }
 
 .hero-content {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 4.5rem);
     display: grid;
     place-items: center;
 }

@@ -1,4 +1,4 @@
-const app = document.querySelector("#nav");
+const navbar = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
@@ -6,9 +6,9 @@ const sidebar = document.querySelector("#sidebar");
 // fix app on top of the page
 window.addEventListener("scroll", function () {
     if (window.scrollY > 80) {
-        app.classList.add("app-fixed");
+        navbar.classList.add("navbar-fixed");
     } else {
-        app.classList.remove("app-fixed");
+        navbar.classList.remove("navbar-fixed");
     }
 });
 
