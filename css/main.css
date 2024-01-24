@@ -478,6 +478,7 @@ services
     padding: 3rem 1.5rem;
     margin-bottom: 2rem;
     text-align: center;
+    transition: var(--transition);
 }
 
 .service .underline {
@@ -485,14 +486,32 @@ services
     height: 0.125rem;
 }
 
-/*.service:hover {*/
-/*    background: var(--clr-primary-1);*/
-/*    color: var(--clr-white);*/
-/*}*/
+.service-text {
+    transition: var(--transition);
+}
 
-/*.service:hover .service-text {*/
-/*    color: var(--clr-white);*/
-/*}*/
+.service:hover {
+    background: var(--clr-primary-1);
+    color: var(--clr-white);
+}
+
+.service:hover .service-text {
+    color: var(--clr-white);
+}
+
+@media screen and (min-width : 676px ) {
+    .services-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width : 992px ) {
+    .services-info {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 
 
