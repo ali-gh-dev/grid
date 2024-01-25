@@ -136,7 +136,7 @@ p {
     max-width: var(--max-width);
 }
 
-.bg-grey{
+.bg-grey {
     background: var(--clr-grey-3);
 }
 
@@ -499,7 +499,7 @@ services
     color: var(--clr-white);
 }
 
-@media screen and (min-width : 676px ) {
+@media screen and (min-width: 676px ) {
     .services-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -507,13 +507,124 @@ services
     }
 }
 
-@media screen and (min-width : 992px ) {
+@media screen and (min-width: 992px ) {
     .services-info {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 
+/*
+================================================
+projects
+================================================
+*/
+
+.projects-text {
+    width: 85vw;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.project {
+    position: relative;
+    margin-bottom: 3rem;
+    background: var(--clr-primary-2);
+    border-radius: 1rem;
+}
+
+.project-img {
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
 
 
+.project-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--clr-white);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: var(--transition);
+}
 
+.project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.3rem solid var(--clr-white);
+    border-radius: 1rem;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project:hover .project-info {
+    opacity: 1;
+}
+
+.project:hover .project-img {
+    opacity: 0.2;
+}
+
+.project:hover::after {
+    opacity: 1;
+    scale: 0.8;
+}
+
+.project-info p {
+    color: var(--clr-white);
+}
+
+@media screen and (min-width: 676px) {
+    .projects-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .projects-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .project {
+        height: 100%;
+    }
+
+    .project-img {
+        height: 100%;
+    }
+
+    .project-1 {
+        grid-area: a1;
+    }
+
+    .project-2 {
+        grid-area: a2;
+    }
+
+    .project-3 {
+        grid-area: a3;
+    }
+
+    .project-4 {
+        grid-area: a4;
+    }
+
+    .projects-content {
+        grid-template-rows: 250px 250px;
+        grid-template-areas:
+                "a1 a3 a3"
+                "a1 a2 a4";
+        gap: 1rem;
+    }
+}
