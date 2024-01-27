@@ -637,8 +637,12 @@ connect
 */
 
 .connect {
-    position: relative;
     min-height: 40rem;
+    margin: 5rem 0;
+    padding: 10rem 0 5rem 0;
+    display: grid;
+    place-items: center;
+    position: relative;
     -webkit-clip-path: polygon(
             50% 0,
             50% 0,
@@ -661,6 +665,7 @@ connect
     height: 100%;
     background: var(--clr-white);
     opacity: 0.5;
+    z-index: -1;
 }
 
 .connect-video {
@@ -670,4 +675,16 @@ connect
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -2;
+}
+
+.connect-info {
+    background: var(--clr-primary-5);
+    padding: 2rem 1.5rem 8rem 1.5rem;
+    text-align: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.connect-text {
+    max-width: 30rem;
 }
