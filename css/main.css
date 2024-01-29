@@ -852,39 +852,79 @@ blog
 ================================================
 */
 
-/*.blog {*/
-/*    background: var(--clr-grey-3);*/
-/*}*/
+.blog {
+    background: var(--clr-grey-3);
+}
 
-/*.card {*/
-/*    height: 27rem;*/
-/*    position: relative;*/
-/*    perspective: 1500px;*/
-/*}*/
+.card {
+    height: 28rem;
+    position: relative;
+    perspective: 1500px;
+}
 
-/*.card-side {*/
-/*    !*position: absolute;*!*/
-/*    !*top: 0;*!*/
-/*    !*left: 0;*!*/
-/*    !*width: 100%;*!*/
-/*    !*height: 100%;*!*/
-/*    transition: all 1s linear;*/
-/*    backface-visibility: hidden;*/
-/*}*/
+.card-front {
+    background: var(--clr-white);
+}
 
-/*.card-front {*/
-/*    background: red;*/
-/*}*/
+.card-back {
+    background: var(--clr-primary-5);
+    transform: rotateY(180deg);
+    display: grid;
+    place-items: center;
+}
 
-/*.card-back {*/
-/*    background: blue;*/
-/*    transform: rotateY(180deg);*/
-/*}*/
+.card-info {
+    padding: 1rem;
+}
 
-/*.card:hover .card-front {*/
-/*    transform: rotateY(-180deg);*/
-/*}*/
+.card-footer img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
 
-/*.card:hover .card-back {*/
-/*    transform: rotateY(0);*/
-/*}*/
+.card-front .card-img {
+    height: 13rem;
+    object-fit: cover;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.card-footer p {
+    margin-bottom: 0;
+    justify-self: end;
+    color: var(--clr-primary-2);
+    font-size: 0.85rem;
+}
+
+.card-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: var(--light-shadow);
+    transition: all 1s linear;
+    backface-visibility: hidden;
+}
+
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0);
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 3rem 1rem;
+}
