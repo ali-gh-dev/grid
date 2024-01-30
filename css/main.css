@@ -766,6 +766,13 @@ skills
     direction: ltr;
 }
 
+
+@media screen and (max-width: 768px) {
+    .skills-content article:first-of-type {
+        margin-bottom: 5rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .skills-content {
         display: grid;
@@ -928,3 +935,48 @@ blog
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     gap: 3rem 1rem;
 }
+
+
+/*
+================================================
+footer
+================================================
+*/
+
+/*footer {*/
+/*    height: 15rem;*/
+/*    display: grid;*/
+/*    place-items: center;*/
+/*    background: var(--clr-primary-1);*/
+/*}*/
+
+/*.footer-content {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.footer-icons {*/
+/*    max-width: 40rem;*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(5, 1fr);*/
+/*    column-gap: 0.5rem;*/
+/*    place-items: center;*/
+/*    margin: 2rem auto;*/
+/*}*/
+
+/*.footer-icons i {*/
+/*    color: var(--clr-primary-3);*/
+/*    font-size: 1.5rem;*/
+/*    opacity: 0.5;*/
+/*}*/
+
+/*.footer-icons i:hover {*/
+/*    color: var(--clr-white);*/
+/*    opacity: 1;*/
+/*}*/
+
+
+/*.footer-copyright p {*/
+/*    margin-bottom: 3rem;*/
+/*    color: var(--clr-primary-3);*/
+/*    font-size: 1.2rem;*/
+/*}*/
